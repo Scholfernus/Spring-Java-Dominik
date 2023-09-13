@@ -10,7 +10,7 @@ public class SetterGreetingController {
 
     private GreetingRepository greeting;
 @Autowired
-    public void setGreeting(@Qualifier ("setterGreetingController")GreetingRepository greeting) {
+    public void setGreeting(@Qualifier ("setterGreetingService")GreetingRepository greeting) {
         this.greeting = greeting;
     }
 
